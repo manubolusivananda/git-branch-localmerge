@@ -5,7 +5,7 @@ resource "aws_instance" "sriram" {
     instance_type = var.type1
     subnet_id = aws_subnet.pub_sub.id
     vpc_security_group_ids = [aws_security_group.sgr.id]
-    associate_public_ip_address = true                   
+    associate_public_ip_address = false                   
 }
   
 resource "aws_instance" "pv_server" {
