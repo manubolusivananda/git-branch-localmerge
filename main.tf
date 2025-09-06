@@ -6,7 +6,7 @@ resource "aws_instance" "vasu" {
     associate_public_ip_address = true                   
 }
   
-resource "aws_instance" "pv_server" {
+resource "aws_instance" "venky" {
   ami = var.ami_id2
   instance_type = var.type2
   vpc_security_group_ids = [aws_security_group.sgr.id]
