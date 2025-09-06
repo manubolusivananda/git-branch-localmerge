@@ -1,4 +1,4 @@
-resource "aws_instance" "sreenu" {
+resource "aws_instance" "vasu" {
     ami = var.ami_id1
     instance_type = var.type1
     subnet_id = aws_subnet.pub_sub.id
