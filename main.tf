@@ -1,9 +1,11 @@
-resource "aws_instance" "vasu" {
+
+resource "aws_instance" "sriram" {
+
     ami = var.ami_id1
     instance_type = var.type1
     subnet_id = aws_subnet.pub_sub.id
     vpc_security_group_ids = [aws_security_group.sgr.id]
-    associate_public_ip_address = true                   
+    associate_public_ip_address = false                   
 }
   
 resource "aws_instance" "venky" {
